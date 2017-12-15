@@ -1,0 +1,481 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D61051751FE215CA00370FC9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D61051741FE215CA00370FC9 /* AppDelegate.m */; };
+		D61051781FE215CA00370FC9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D61051771FE215CA00370FC9 /* ViewController.m */; };
+		D610517B1FE215CA00370FC9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D61051791FE215CA00370FC9 /* Main.storyboard */; };
+		D610517D1FE215CA00370FC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D610517C1FE215CA00370FC9 /* Assets.xcassets */; };
+		D61051801FE215CA00370FC9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D610517E1FE215CA00370FC9 /* LaunchScreen.storyboard */; };
+		D61051831FE215CA00370FC9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D61051821FE215CA00370FC9 /* main.m */; };
+		D610518D1FE215CA00370FC9 /* WLToastUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D610518C1FE215CA00370FC9 /* WLToastUITests.m */; };
+		D61051991FE21DE700370FC9 /* WLToast.m in Sources */ = {isa = PBXBuildFile; fileRef = D61051981FE21DE700370FC9 /* WLToast.m */; };
+		D610519C1FE23E6100370FC9 /* UIView+GradientBgColor.m in Sources */ = {isa = PBXBuildFile; fileRef = D610519A1FE23E6100370FC9 /* UIView+GradientBgColor.m */; };
+		D610519F1FE251F400370FC9 /* WLTipview.m in Sources */ = {isa = PBXBuildFile; fileRef = D610519E1FE251F400370FC9 /* WLTipview.m */; };
+		D61051A21FE26B7800370FC9 /* ToastManage.m in Sources */ = {isa = PBXBuildFile; fileRef = D61051A11FE26B7800370FC9 /* ToastManage.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D61051891FE215CA00370FC9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D61051681FE215CA00370FC9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D610516F1FE215CA00370FC9;
+			remoteInfo = WLToast;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D61051701FE215CA00370FC9 /* WLToast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WLToast.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D61051731FE215CA00370FC9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D61051741FE215CA00370FC9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D61051761FE215CA00370FC9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D61051771FE215CA00370FC9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D610517A1FE215CA00370FC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D610517C1FE215CA00370FC9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D610517F1FE215CA00370FC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D61051811FE215CA00370FC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D61051821FE215CA00370FC9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D61051881FE215CA00370FC9 /* WLToastUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WLToastUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D610518C1FE215CA00370FC9 /* WLToastUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WLToastUITests.m; sourceTree = "<group>"; };
+		D610518E1FE215CA00370FC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D61051971FE21DE700370FC9 /* WLToast.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WLToast.h; sourceTree = "<group>"; };
+		D61051981FE21DE700370FC9 /* WLToast.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WLToast.m; sourceTree = "<group>"; };
+		D610519A1FE23E6100370FC9 /* UIView+GradientBgColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+GradientBgColor.m"; sourceTree = "<group>"; };
+		D610519B1FE23E6100370FC9 /* UIView+GradientBgColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+GradientBgColor.h"; sourceTree = "<group>"; };
+		D610519D1FE251F400370FC9 /* WLTipview.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WLTipview.h; sourceTree = "<group>"; };
+		D610519E1FE251F400370FC9 /* WLTipview.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WLTipview.m; sourceTree = "<group>"; };
+		D61051A01FE26B7800370FC9 /* ToastManage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToastManage.h; sourceTree = "<group>"; };
+		D61051A11FE26B7800370FC9 /* ToastManage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToastManage.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D610516D1FE215CA00370FC9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D61051851FE215CA00370FC9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D61051671FE215CA00370FC9 = {
+			isa = PBXGroup;
+			children = (
+				D61051721FE215CA00370FC9 /* WLToast */,
+				D610518B1FE215CA00370FC9 /* WLToastUITests */,
+				D61051711FE215CA00370FC9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D61051711FE215CA00370FC9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D61051701FE215CA00370FC9 /* WLToast.app */,
+				D61051881FE215CA00370FC9 /* WLToastUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D61051721FE215CA00370FC9 /* WLToast */ = {
+			isa = PBXGroup;
+			children = (
+				D61051731FE215CA00370FC9 /* AppDelegate.h */,
+				D61051741FE215CA00370FC9 /* AppDelegate.m */,
+				D61051761FE215CA00370FC9 /* ViewController.h */,
+				D61051771FE215CA00370FC9 /* ViewController.m */,
+				D61051A31FE2722300370FC9 /* ToastManage */,
+				D61051791FE215CA00370FC9 /* Main.storyboard */,
+				D610517C1FE215CA00370FC9 /* Assets.xcassets */,
+				D610517E1FE215CA00370FC9 /* LaunchScreen.storyboard */,
+				D61051811FE215CA00370FC9 /* Info.plist */,
+				D61051821FE215CA00370FC9 /* main.m */,
+			);
+			path = WLToast;
+			sourceTree = "<group>";
+		};
+		D610518B1FE215CA00370FC9 /* WLToastUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D610518C1FE215CA00370FC9 /* WLToastUITests.m */,
+				D610518E1FE215CA00370FC9 /* Info.plist */,
+			);
+			path = WLToastUITests;
+			sourceTree = "<group>";
+		};
+		D61051A31FE2722300370FC9 /* ToastManage */ = {
+			isa = PBXGroup;
+			children = (
+				D61051A41FE2722D00370FC9 /* views */,
+				D61051A01FE26B7800370FC9 /* ToastManage.h */,
+				D61051A11FE26B7800370FC9 /* ToastManage.m */,
+			);
+			path = ToastManage;
+			sourceTree = "<group>";
+		};
+		D61051A41FE2722D00370FC9 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				D610519B1FE23E6100370FC9 /* UIView+GradientBgColor.h */,
+				D610519A1FE23E6100370FC9 /* UIView+GradientBgColor.m */,
+				D61051971FE21DE700370FC9 /* WLToast.h */,
+				D61051981FE21DE700370FC9 /* WLToast.m */,
+				D610519D1FE251F400370FC9 /* WLTipview.h */,
+				D610519E1FE251F400370FC9 /* WLTipview.m */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D610516F1FE215CA00370FC9 /* WLToast */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D61051911FE215CB00370FC9 /* Build configuration list for PBXNativeTarget "WLToast" */;
+			buildPhases = (
+				D610516C1FE215CA00370FC9 /* Sources */,
+				D610516D1FE215CA00370FC9 /* Frameworks */,
+				D610516E1FE215CA00370FC9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WLToast;
+			productName = WLToast;
+			productReference = D61051701FE215CA00370FC9 /* WLToast.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D61051871FE215CA00370FC9 /* WLToastUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D61051941FE215CB00370FC9 /* Build configuration list for PBXNativeTarget "WLToastUITests" */;
+			buildPhases = (
+				D61051841FE215CA00370FC9 /* Sources */,
+				D61051851FE215CA00370FC9 /* Frameworks */,
+				D61051861FE215CA00370FC9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D610518A1FE215CA00370FC9 /* PBXTargetDependency */,
+			);
+			name = WLToastUITests;
+			productName = WLToastUITests;
+			productReference = D61051881FE215CA00370FC9 /* WLToastUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D61051681FE215CA00370FC9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = "张子豪";
+				TargetAttributes = {
+					D610516F1FE215CA00370FC9 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					D61051871FE215CA00370FC9 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D610516F1FE215CA00370FC9;
+					};
+				};
+			};
+			buildConfigurationList = D610516B1FE215CA00370FC9 /* Build configuration list for PBXProject "WLToast" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D61051671FE215CA00370FC9;
+			productRefGroup = D61051711FE215CA00370FC9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D610516F1FE215CA00370FC9 /* WLToast */,
+				D61051871FE215CA00370FC9 /* WLToastUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D610516E1FE215CA00370FC9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D61051801FE215CA00370FC9 /* LaunchScreen.storyboard in Resources */,
+				D610517D1FE215CA00370FC9 /* Assets.xcassets in Resources */,
+				D610517B1FE215CA00370FC9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D61051861FE215CA00370FC9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D610516C1FE215CA00370FC9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D61051781FE215CA00370FC9 /* ViewController.m in Sources */,
+				D61051831FE215CA00370FC9 /* main.m in Sources */,
+				D61051A21FE26B7800370FC9 /* ToastManage.m in Sources */,
+				D61051991FE21DE700370FC9 /* WLToast.m in Sources */,
+				D610519F1FE251F400370FC9 /* WLTipview.m in Sources */,
+				D61051751FE215CA00370FC9 /* AppDelegate.m in Sources */,
+				D610519C1FE23E6100370FC9 /* UIView+GradientBgColor.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D61051841FE215CA00370FC9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D610518D1FE215CA00370FC9 /* WLToastUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D610518A1FE215CA00370FC9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D610516F1FE215CA00370FC9 /* WLToast */;
+			targetProxy = D61051891FE215CA00370FC9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D61051791FE215CA00370FC9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D610517A1FE215CA00370FC9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D610517E1FE215CA00370FC9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D610517F1FE215CA00370FC9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D610518F1FE215CA00370FC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D61051901FE215CA00370FC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D61051921FE215CB00370FC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WLToast/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mympos.HKAdmin.WLToast;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D61051931FE215CB00370FC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WLToast/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mympos.HKAdmin.WLToast;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D61051951FE215CB00370FC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WLToastUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mympos.HKAdmin.WLToastUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WLToast;
+			};
+			name = Debug;
+		};
+		D61051961FE215CB00370FC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WLToastUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mympos.HKAdmin.WLToastUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WLToast;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D610516B1FE215CA00370FC9 /* Build configuration list for PBXProject "WLToast" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D610518F1FE215CA00370FC9 /* Debug */,
+				D61051901FE215CA00370FC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D61051911FE215CB00370FC9 /* Build configuration list for PBXNativeTarget "WLToast" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D61051921FE215CB00370FC9 /* Debug */,
+				D61051931FE215CB00370FC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D61051941FE215CB00370FC9 /* Build configuration list for PBXNativeTarget "WLToastUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D61051951FE215CB00370FC9 /* Debug */,
+				D61051961FE215CB00370FC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D61051681FE215CA00370FC9 /* Project object */;
+}
