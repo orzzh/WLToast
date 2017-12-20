@@ -20,6 +20,13 @@ static WLTipview *_tipview;
 
 @interface WLTipview()
 
+@property (nonatomic,assign)BOOL haveBorder;
+@property (nonatomic,assign)BOOL isShow;
+
+@property (nonatomic,assign)CGPoint centerTemp;
+@property (nonatomic,assign)int borderHeight;
+@property (nonatomic,assign)int topMargin;
+
 @property (nonatomic,strong)UILabel *titleLbl;
 
 @end
@@ -57,14 +64,74 @@ static WLTipview *_tipview;
 - (instancetype)init{
     self = [super init];
     if (self) {
+        _isShow = NO;
+        _haveBorder = NO;
+        _borderHeight = 0;
+        _topMargin = [UIScreen mainScreen].bounds.size.height>=812 ? 88:64;
         self.layer.cornerRadius = 5;
         self.layer.masksToBounds = YES;
         self.backgroundColor = RGB_COLOR(41,41,41);
         [self addSubview:self.titleLbl];
+        [self addObserver];
     }
     return self;
 }
 
+
+//当键盘出现
+- (void)keyboardWillShow:(NSNotification *)notification
+{
+    _haveBorder = YES;
+    //获取键盘的高度
+    NSDictionary *userInfo = [notification userInfo];
+    NSValue *value = [userInfo objectForKey:UIKeyboardFrameEndUserInfoKey];
+    CGRect keyboardRect = [value CGRectValue];
+    int height = keyboardRect.size.height;
+    WLTipview *tip = [WLTipview shareTipview];
+    tip.borderHeight = height;
+    if (_isShow) {
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [UIView animateWithDuration:0.3 animations:^{
+                tip.center = CGPointMake( [UIScreen mainScreen].bounds.size.width/2,  [UIScreen mainScreen].bounds.size.height/2-height/2+tip.topMargin);
+            }];
+        });
+    }
+}
+
+//当键退出
+- (void)keyboardWillHide:(NSNotification *)notification
+{
+    _haveBorder = NO;
+    //获取键盘的高度
+    NSDictionary *userInfo = [notification userInfo];
+    NSValue *value = [userInfo objectForKey:UIKeyboardFrameEndUserInfoKey];
+    CGRect keyboardRect = [value CGRectValue];
+    int height = keyboardRect.size.height;
+    WLTipview *tip = [WLTipview shareTipview];
+    tip.borderHeight = height;
+    if (_isShow) {
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [UIView animateWithDuration:0.3 animations:^{
+                tip.center = tip.centerTemp;
+            }];
+        });
+    }
+}
+
+- (void)addObserver{
+    //监听当键盘将要出现时
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(keyboardWillShow:)
+                                                 name:UIKeyboardWillShowNotification
+                                               object:nil];
+    
+    //监听当键将要退出时
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(keyboardWillHide:)
+                                                 name:UIKeyboardWillHideNotification
+                                               object:nil];
+
+}
 
 + (void)checkTip:(NSString *)title{
     [NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(hidnTip) object:@"hidnTip"];
@@ -84,7 +151,6 @@ static WLTipview *_tipview;
 }
 
 + (void)showTip{
-    NSLog(@"展示");
     WLTipview *tip = [WLTipview shareTipview];
     tip.layer.transform = CATransform3DScale(tip.layer.transform, 0, 0, 0);
     tip.alpha = 0;
@@ -96,6 +162,12 @@ static WLTipview *_tipview;
     }completion:^(BOOL finished) {
         [WLTipview performSelector:@selector(hidnTip) withObject:@"hidnTip" afterDelay:STAY_SECOND];
     }];
+    
+    tip.centerTemp =  tip.center;
+    if (tip.haveBorder) {
+        tip.center = CGPointMake( [UIScreen mainScreen].bounds.size.width/2,  [UIScreen mainScreen].bounds.size.height/2-tip.borderHeight/2+tip.topMargin);
+    }
+    tip.isShow = YES;
 }
 
 //添加手势
@@ -115,6 +187,7 @@ static WLTipview *_tipview;
     }completion:^(BOOL finished) {
         [tip removeFromSuperview];
     }];
+    tip.isShow = NO;
 }
 
 //计算文本宽

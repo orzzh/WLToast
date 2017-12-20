@@ -43,7 +43,8 @@
 
 #pragma mark - 改变渐变背景
 - (IBAction)chanageTop:(id)sender {
-    [ToastManage showTopToastWith:@"请检查网络" colors:@[RGB_COLOR(245, 41, 125),RGB_COLOR(237, 202, 70)] leftImg:[UIImage imageNamed:@"11111"]  titleColor:[UIColor whiteColor]];
+//    [ToastManage showTopToastWith:@"请检查网络" colors:@[RGB_COLOR(181,229,98),RGB_COLOR(137, 218, 104)]];
+    [ToastManage showTopToastWith:@"请检查网络" colors:@[RGB_COLOR(181,229,98),RGB_COLOR(137, 218, 104)] leftImg:nil  titleColor:[UIColor whiteColor]];
 }
 
 #pragma mark - 提示
